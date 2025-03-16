@@ -43,7 +43,7 @@ def udp_checksum(source_ip, dest_ip, source_port, dest_port, data):
     checksum = ~checksum & 0xFFFF
     return checksum
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     print("\n===================== UDP Checksum Calculator ======================")
 
     src_ip = input("Masukkan IP sumber: ").strip()
